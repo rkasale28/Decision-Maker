@@ -29,7 +29,7 @@ def home(request):
         
         plt.title(titles[num])
 
-        plt.xticks([15,40,65])
+        plt.xticks([15,25,35,45,55,65])
         num+=1
 
         plt.xlabel('Total No. of Students')
