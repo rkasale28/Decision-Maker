@@ -20,10 +20,10 @@ def home(request):
     for y in Y:
         reg = LinearRegression().fit(X.reshape(-1,1), y)
         p=reg.predict(x_test)
-        y_pred.append(p[0])
+        y_pred.append(round(p[0],0))
         y1=y.tolist()
 
-        fig = plt.figure(figsize=(12,4))
+        fig = plt.figure(figsize=(6,4))
         plt.bar(x1, y1,color = 'b', width = 2)
         
         if (num==1):
@@ -52,7 +52,7 @@ def home(request):
     fig = plt.figure(figsize=(12,4))
     plt.plot(x_test, y_pred, 'o-b')
     for i,j in zip(x_test,y_pred):
-        plt.annotate(str(int(j)),xy=(i-0.07,j+0.9))
+        plt.annotate(str(j),xy=(i-0.07,j+0.9))     
 
     plt.xlabel('Preference No.')
     plt.ylabel('Expected no. of Students in favour')
@@ -60,4 +60,8 @@ def home(request):
         
     plt.tight_layout()
     fig.savefig('static/images/analysis.jpg')
-    return render(request, 'home.html')
+
+    included=sum(y_pred)
+    missed=(140-included)
+    
+    return render(request, 'home.html',{'missed':missed,'included':included})
