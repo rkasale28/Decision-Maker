@@ -35,7 +35,7 @@ def home(request):
         else:
             plt.title('DIP as '+str(num)+'th Preference')
 
-        plt.xticks([0,20,40])
+        plt.xticks([0,20,40,60])
         num+=1
 
         plt.xlabel('Total No. of Students')
@@ -49,7 +49,7 @@ def home(request):
 
     x_test=[1,2,3,4,5,6]
     
-    fig = plt.figure()
+    fig = plt.figure(figsize=(12,4))
     plt.plot(x_test, y_pred, 'o-b')
     for i,j in zip(x_test,y_pred):
         plt.annotate(str(int(j)),xy=(i-0.07,j+0.9))
