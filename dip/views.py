@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 
 # Create your views here.
 def home(request):
-    df=pd.read_excel('static/excel/IDC.xlsx')
+    df=pd.read_excel('static/excel/IDC.xlsx',sheet_name='DIP')
     x_test=np.array([140]).reshape(-1,1)
     y_pred=[]
 
@@ -44,7 +44,7 @@ def home(request):
         for i,j in zip(X,y):
             plt.annotate(str(round(j,0)),xy=(i-0.7,j))
         plt.tight_layout()
-        fig.savefig('static/images/pref_num_'+str(num-1)+'.jpg')
+        fig.savefig('static/images/dip/pref_num_'+str(num-1)+'.jpg')
 
 
     x_test=[1,2,3,4,5,6]
@@ -59,7 +59,7 @@ def home(request):
     plt.title('Prediction for total 140 students')
         
     plt.tight_layout()
-    fig.savefig('static/images/analysis.jpg')
+    fig.savefig('static/images/dip/analysis.jpg')
 
     included=sum(y_pred)
     missed=(140-included)
