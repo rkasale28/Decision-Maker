@@ -35,7 +35,7 @@ def home(request):
         else:
             plt.title('DIP as '+str(num)+'th Preference')
 
-        plt.xticks([0,22,44,66])
+        plt.xticks([15,40,65])
         num+=1
 
         plt.xlabel('Total No. of Students')
@@ -64,4 +64,4 @@ def home(request):
     included=sum(y_pred)
     missed=(140-included)
     
-    return render(request, 'home.html',{'missed':missed,'included':included})
+    return render(request, 'dip_home.html',{'missed':missed,'included':included})

@@ -1,0 +1,6 @@
+.active {
+    color: #0275d8;
+    border-bottom: #0275d8 solid 2px;
+    height: 50px;
+    vertical-align: middle;
+}
