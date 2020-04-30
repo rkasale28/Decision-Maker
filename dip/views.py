@@ -35,7 +35,7 @@ def home(request):
         else:
             plt.title('DIP as '+str(num)+'th Preference')
 
-        plt.xticks([0,20,40,60])
+        plt.xticks([0,22,44,66])
         num+=1
 
         plt.xlabel('Total No. of Students')
