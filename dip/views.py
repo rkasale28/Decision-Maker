@@ -24,7 +24,7 @@ def home(request):
         y1=y.tolist()
 
         fig = plt.figure(figsize=(6,4))
-        plt.bar(x1, y1,color = 'b', width = 2)
+        plt.plot(x1, y1,'o-b')
         
         if (num==1):
             plt.title('DIP as 1st Preference')
@@ -49,10 +49,10 @@ def home(request):
 
     x_test=[1,2,3,4,5,6]
     
-    fig = plt.figure(figsize=(12,4))
-    plt.plot(x_test, y_pred, 'o-b')
-    for i,j in zip(x_test,y_pred):
-        plt.annotate(str(j),xy=(i-0.07,j+0.9))     
+    fig, ax = plt.subplots(figsize=(12,4))
+    plt.bar(x_test, y_pred, color = 'b')
+    for p in ax.patches:
+        ax.annotate(str(p.get_height()), (p.get_x()+(p.get_width()/2), p.get_height() * 1.01))
 
     plt.xlabel('Preference No.')
     plt.ylabel('Expected no. of Students in favour')
