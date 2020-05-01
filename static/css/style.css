@@ -1,13 +1,13 @@
 .active {
-    color: #0275d8;
-    border-bottom: #0275d8 solid 2px;
     height: 50px;
     vertical-align: middle;
+    background-color: #0275d8;
+    color:white;
 }
 
 ul li:hover{
-    background-color: #0275d8;
-    color:white;
+    color: #0275d8;
+    border-bottom: #0275d8 solid 2px;
     height: 50px;
     vertical-align: middle;
     text-decoration: none;
@@ -15,5 +15,5 @@ ul li:hover{
 
 a:hover{
     text-decoration: none;
-    color:white;
+    color: #0275d8;
 }
