@@ -29,7 +29,7 @@ def fp(request):
         
         plt.title(titles[num])
 
-        plt.xticks([15,25,35,45,55,65])
+        plt.xticks([15,45,75])
         num+=1
 
         plt.xlabel('Total No. of Students')
@@ -42,7 +42,7 @@ def fp(request):
     
     fig, ax = plt.subplots(figsize=(12,4))
     plt.bar(titles, y_pred, color = 'b')
-    plt.yticks([0,50,100])
+    
     for p in ax.patches:
         ax.annotate(str(p.get_height()), (p.get_x()+(p.get_width()/2), p.get_height() * 1.01))
 
@@ -80,7 +80,7 @@ def sp(request):
         
         plt.title(titles[num])
 
-        plt.xticks([15,25,35,45,55,65])
+        plt.xticks([15,45,75])
         num+=1
 
         plt.xlabel('Total No. of Students')
@@ -93,7 +93,7 @@ def sp(request):
     
     fig, ax = plt.subplots(figsize=(12,4))
     plt.bar(titles, y_pred, color = 'b')
-    plt.yticks([0,50,100])
+    
     for p in ax.patches:
         ax.annotate(str(p.get_height()), (p.get_x()+(p.get_width()/2), p.get_height() * 1.01))
 
@@ -131,7 +131,7 @@ def tp(request):
         
         plt.title(titles[num])
 
-        plt.xticks([15,25,35,45,55,65])
+        plt.xticks([15,45,75])
         num+=1
 
         plt.xlabel('Total No. of Students')
@@ -144,7 +144,7 @@ def tp(request):
     
     fig, ax = plt.subplots(figsize=(12,4))
     plt.bar(titles, y_pred, color = 'b')
-    plt.yticks([0,50,100])
+    
     for p in ax.patches:
         ax.annotate(str(p.get_height()), (p.get_x()+(p.get_width()/2), p.get_height() * 1.01))
 
@@ -182,7 +182,7 @@ def fop(request):
         
         plt.title(titles[num])
 
-        plt.xticks([15,25,35,45,55,65])
+        plt.xticks([15,45,75])
         num+=1
 
         plt.xlabel('Total No. of Students')
@@ -195,7 +195,7 @@ def fop(request):
     
     fig, ax = plt.subplots(figsize=(12,4))
     plt.bar(titles, y_pred, color = 'b')
-    plt.yticks([0,50,100])
+    
     for p in ax.patches:
         ax.annotate(str(p.get_height()), (p.get_x()+(p.get_width()/2), p.get_height() * 1.01))
 
@@ -233,7 +233,7 @@ def fip(request):
         
         plt.title(titles[num])
 
-        plt.xticks([15,25,35,45,55,65])
+        plt.xticks([15,45,75])
         num+=1
 
         plt.xlabel('Total No. of Students')
@@ -246,7 +246,7 @@ def fip(request):
     
     fig, ax = plt.subplots(figsize=(12,4))
     plt.bar(titles, y_pred, color = 'b')
-    plt.yticks([0,50,100])
+    
     for p in ax.patches:
         ax.annotate(str(p.get_height()), (p.get_x()+(p.get_width()/2), p.get_height() * 1.01))
 
@@ -284,7 +284,7 @@ def sip(request):
         
         plt.title(titles[num])
 
-        plt.xticks([15,25,35,45,55,65])
+        plt.xticks([15,45,75])
         num+=1
 
         plt.xlabel('Total No. of Students')
@@ -297,7 +297,7 @@ def sip(request):
     
     fig, ax = plt.subplots(figsize=(12,4))
     plt.bar(titles, y_pred, color = 'b')
-    plt.yticks([0,50,100])
+    
     for p in ax.patches:
         ax.annotate(str(p.get_height()), (p.get_x()+(p.get_width()/2), p.get_height() * 1.01))
 
