@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 
 
 # Create your views here.
-def home(request):
+def fp(request):
     df=pd.read_excel('static/excel/IDC.xlsx',sheet_name='FP')
     x_test=np.array([140]).reshape(-1,1)
     y_pred=[]
