@@ -29,7 +29,7 @@ def fp(request):
         
         plt.title(titles[num])
 
-        plt.xticks([15,40,65,90,115])
+        plt.xticks([15,45,75,105,135])
         num+=1
 
         plt.xlabel('Total No. of Students')
@@ -80,7 +80,7 @@ def sp(request):
         
         plt.title(titles[num])
 
-        plt.xticks([15,40,65,90,115])
+        plt.xticks([15,45,75,105,135])
         num+=1
 
         plt.xlabel('Total No. of Students')
@@ -131,7 +131,7 @@ def tp(request):
         
         plt.title(titles[num])
 
-        plt.xticks([15,40,65,90,115])
+        plt.xticks([15,45,75,105,135])
         num+=1
 
         plt.xlabel('Total No. of Students')
@@ -182,7 +182,7 @@ def fop(request):
         
         plt.title(titles[num])
 
-        plt.xticks([15,40,65,90,115])
+        plt.xticks([15,45,75,105,135])
         num+=1
 
         plt.xlabel('Total No. of Students')
@@ -233,7 +233,7 @@ def fip(request):
         
         plt.title(titles[num])
 
-        plt.xticks([15,40,65,90,115])
+        plt.xticks([15,45,75,105,135])
         num+=1
 
         plt.xlabel('Total No. of Students')
@@ -284,7 +284,7 @@ def sip(request):
         
         plt.title(titles[num])
 
-        plt.xticks([15,40,65,90,115])
+        plt.xticks([15,45,75,105,135])
         num+=1
 
         plt.xlabel('Total No. of Students')
