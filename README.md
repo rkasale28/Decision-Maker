@@ -1,3 +1,11 @@
 # Decision-Maker
-To understand how Linear Regression works in scikit-learn<br />
-Web project created using Django Framework
+#### Initiated and implemented a web application, named Decision Maker, which would predict the number of students who would select a particular subject, given choices.
+
+> Our college gives us freedom to select one subject of our choice. This subject is called Elective. We are given options of 6 subjects, and we have to rate these subjects in order of preference. 
+
+**Important Features:**
+* This project is implemented using Django Framework.
+* The dataset was formed by extracting data, every 12 hours
+* Simple Linear Regression Algorithm was implemented for this purpose.
+* Used inbuilt scikit-learn package to implement Simple Linear Regression
+* matplotlib was used for plotting graphs.
