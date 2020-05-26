@@ -7,7 +7,7 @@
 
 **Important Features:**
 * This project is implemented using Django Framework.
-* The dataset was formed by extracting data, after every 12 hours
-* Simple Linear Regression Algorithm was implemented for data mining.
-* Used inbuilt scikit-learn package to implement Simple Linear Regression
+* The dataset was built by extracting data, after every 12 hours
+* Simple Linear Regression Algorithm was implemented for prediction.
+* Used inbuilt scikit learn package to implement Simple Linear Regression
 * matplotlib was used for plotting graphs.
